@@ -33,3 +33,6 @@ RR, AP, and AM receive deliveries 17-20 days earlier than estimated. Olist pads 
 Sellers in AM average a 2.33 review score vs 4.05 in SP — despite meeting their delivery estimates. The 48-day average wait time in AM vs 12 days in SP drives dissatisfaction regardless of estimate accuracy.
 
 **Conclusion:** Delivery underperformance is a last-mile logistics infrastructure problem, not a seller performance issue. Olist should invest in regional fulfillment centers in northeastern Brazil and recalibrate delivery estimates for northern states.
+## Dashboard
+
+Live KPI Dashboard: [Olist Delivery Performance — Tableau Public](https://public.tableau.com/app/profile/shivani.sandeveni7417/viz/Olist-Brazil-Delivery-KPI-Dashboard/OlistDeliveryKPIDashboard)
