@@ -1,0 +1,49 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: "Cleaned and typed orders from raw source"
+    columns:
+      - name: ORDER_ID
+        description: "Unique order identifier"
+        tests:
+          - unique
+          - not_null
+      - name: CUSTOMER_ID
+        tests:
+          - not_null
+
+  - name: stg_customers
+    description: "Cleaned customer records"
+    columns:
+      - name: CUSTOMER_ID
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_orders
+    description: "Order fact table joined with customer dimension"
+    columns:
+      - name: ORDER_ID
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_revenue
+    description: "Revenue aggregated at order level"
+    columns:
+      - name: ORDER_ID
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_seller_performance
+    description: "Seller-level performance metrics"
+    columns:
+      - name: SELLER_ID
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_delivery_analytics
+    description: "Delivery performance by city and state"
