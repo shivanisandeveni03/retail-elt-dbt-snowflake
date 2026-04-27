@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: raw
+    database: RETAIL_DB
+    schema: RAW
+    tables:
+      - name: ORDERS
+      - name: CUSTOMERS
+      - name: PRODUCTS
+      - name: SELLERS
+      - name: PAYMENTS
+      - name: REVIEWS
+      - name: GEOLOCATION
+      - name: ORDER_ITEMS
+      - name: CATEGORY_TRANSLATION
